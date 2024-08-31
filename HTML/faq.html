@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Assets/atechstore-high-resolution-logo-transparent.png" alt="" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="../index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle custom-dropdown-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Danh mục
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Điện thoại</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                                <li><a class="dropdown-item" href="#">Máy tính bảng</a></li>
+                                <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+                                <li><a class="dropdown-item" href="#">Tai nghe</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-3 custom-link" href="./recruitment.html">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="./faq.html">Trợ giúp</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <div class="icon ms-3">
+                        <a href="./cart.html" class="me-3">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <div id="navbar-links">
+                            <a href="./HTML/LoginRegister.html">
+                                <i class="fa-solid fa-user" id="users"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="body mt-4">
+            <div class="container">
+                <!-- 4 cái nút ở đây -->
+                <div class="row d-flex d-flex justify-content-center mb-5">
+                    <div class="col-2">
+                        <button class="btn btn-primary btn-custom">
+                            <i class="fa fa-undo"></i>
+                            Yêu cầu hoàn trả
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-danger btn-custom">
+                            <i class="fa fa-times-circle"></i>
+                            Yêu cầu hủy đơn
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-success btn-custom">
+                            <i class="fa fa-truck"></i>
+                            Theo dõi đơn hàng
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-warning btn-custom">
+                            <i class="fa fa-exclamation-triangle"></i>
+                            Tố cáo
+                        </button>
+                    </div>
+                </div>
+
+                <h2 class="text-center fw-semibold">Câu hỏi thường gặp</h2>
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Câu hỏi 1: Cách để đăng kí
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" style="background-color: #f8f9fa; color: #495057;">Nhấn vào icon người dùng, nhấn đăng kí bên phải, điền thông tin người dùng và nhấn đăng kí (Sau khi đăng kí thì phải đăng nhập).</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Câu hỏi 2: Làm sao tôi có thể theo dõi đơn hàng?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" style="background-color: #f8f9fa; color: #495057;">Bạn có thể theo dõi qua mã hàng chúng tôi gửi ở email.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Câu hỏi 3: Tôi có thể đổi địa chỉ giao hàng không?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" style="background-color: #f8f9fa; color: #495057;">Đúng vậy, bạn có thể thay đổi đơn hàng trong khi đang chuẩn bị đơn hàng.</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="my-4">
+                    <label for="faqTextarea" class="form-label" style="color: #495057;">Bạn có câu hỏi? Gửi ở đây:</label>
+                    <textarea class="form-control" id="faqTextarea" rows="3" style="width: 100%; background-color: #f8f9fa; color: #495057; border-color: #ced4da; margin: 0 auto;"></textarea>
+                    <div class="text-center mt-3">
+                      <button id="submitQuestion" class="btn btn-primary" style="width: 50%; background-color: #007bff; border-color: #007bff;">Gửi câu hỏi</button>
+                    </div>
+                  </div>
+                                 
+            </div>
+        </div>
+        <footer class="mt-4">
+            <div class="row">
+                <!-- Store Location -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Địa điểm cửa hàng</h5>
+                    <p>123 Đường ABC, Phường XYZ, Quận 1, TP.HCM</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1386.4646778746126!2d104.99582296702327!3d10.617095603137582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1720616284326!5m2!1svi!2s" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <!-- Policy Row -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Chính sách</h5>
+                    <ul class="list-unstyled">
+                        <li><div class="text-decoration-none">Chính sách bảo mật</div></li>
+                        <li><div class="text-decoration-none">Chính sách vận chuyển</div></li>
+                        <li><div class="text-decoration-none">Chính sách hoàn trả</div></li>
+                        <li><div class="text-decoration-none">Điều khoản mua hàng</div></li>
+                        <li><div class="text-decoration-none">Chính sách của ATechstore</div></li>
+                    </ul>
+                </div>
+                <!-- Connect with Us -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="d-flex">
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=9MLkxiSM3mvKhG1J" target="_blank" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=9MLkxiSM3mvKhG1J" target="_blank" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=9MLkxiSM3mvKhG1J" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                    <p><i class="fas fa-phone-alt mt-2"></i> Tổng đài hỗ trợ: 190xxxxx</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@example.com</p>
+                    <p><i class="fa-solid fa-house"></i> CSKH: 69 Đường MMB, Quận 5, TP.HCM</p>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ATechStore. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../JS/subs.js"></script>
+    <script type="module" src="../JS/faq.js"></script>
+</body>
+</html>
